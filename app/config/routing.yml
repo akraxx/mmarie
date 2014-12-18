@@ -1,0 +1,9 @@
+mmarie_contact:
+    resource: "@MmarieContactBundle/Resources/config/routing.yml"
+    prefix:   /{_locale}/contact
+    requirements:
+        _locale: en|fr
+
+app:
+    resource: @AppBundle/Controller/
+    type:     annotation
