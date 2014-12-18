@@ -9,7 +9,7 @@
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
-    <body>
+    <body data-spy="scroll" data-target="#myScrollspy">
 
 
         <div class="container">
@@ -49,11 +49,10 @@
                 <h3 class="text-muted">Maximilien Marie</h3>
             </div>
 
+            <div style="background-color: #F5F5F5;">
             {% block body %}{% endblock %}
-
-            <div class="footer">
-                <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
             </div>
+
         </div>
 
 
@@ -61,6 +60,12 @@
         {% javascripts 'js/*.js' %}
             <script type="text/javascript" src="{{ asset_url }}"></script>
         {% endjavascripts %}
-        {% block javascripts %}{% endblock %}
+        {% block javascripts %}
+            <script type="text/javascript">
+                $(function () {
+                    $('[data-toggle="tooltip"]').tooltip()
+                })
+            </script>
+        {% endblock %}
     </body>
 </html>
