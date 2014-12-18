@@ -1,0 +1,3 @@
+mmarie_skills_homepage:
+    path:     /
+    defaults: { _controller: MmarieSkillsBundle:Default:index }

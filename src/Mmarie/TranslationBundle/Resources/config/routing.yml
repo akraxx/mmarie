@@ -1,0 +1,3 @@
+mmarie_translation_homepage:
+    path:     /{route}
+    defaults: { _controller: MmarieTranslationBundle:Default:index }

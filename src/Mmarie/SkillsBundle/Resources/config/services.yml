@@ -1,0 +1,4 @@
+services:
+#    mmarie_skills.example:
+#        class: Mmarie\SkillsBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

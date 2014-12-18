@@ -1,0 +1,4 @@
+services:
+#    mmarie_portfolio.example:
+#        class: Mmarie\PortfolioBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

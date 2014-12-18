@@ -1,0 +1,3 @@
+mmarie_cv_homepage:
+    path:     /
+    defaults: { _controller: MmarieCvBundle:Default:index }

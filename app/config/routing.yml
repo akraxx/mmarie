@@ -1,9 +1,48 @@
+mmarie_cv:
+    resource: "@MmarieCvBundle/Resources/config/routing.yml"
+    prefix:   /{_locale}/cv
+    requirements:
+        _locale: en|fr
+
+mmarie_portfolio:
+    resource: "@MmariePortfolioBundle/Resources/config/routing.yml"
+    prefix:   /{_locale}/portfolio
+    requirements:
+        _locale: en|fr
+
+mmarie_about_me:
+    resource: "@MmarieAboutMeBundle/Resources/config/routing.yml"
+    prefix:   /{_locale}/aboutme
+    requirements:
+        _locale: en|fr
+
+mmarie_skills:
+    resource: "@MmarieSkillsBundle/Resources/config/routing.yml"
+    prefix:   /{_locale}/skills
+    requirements:
+        _locale: en|fr
+
+mmarie_home:
+    resource: "@MmarieHomeBundle/Resources/config/routing.yml"
+    prefix:   /{_locale}/
+    requirements:
+        _locale: en|fr
+
+mmarie_translation:
+    resource: "@MmarieTranslationBundle/Resources/config/routing.yml"
+    prefix:   /{_locale}/translate
+    requirements:
+            _locale: en|fr
+
 mmarie_contact:
     resource: "@MmarieContactBundle/Resources/config/routing.yml"
     prefix:   /{_locale}/contact
     requirements:
         _locale: en|fr
 
-app:
-    resource: @AppBundle/Controller/
-    type:     annotation
+root:
+    pattern: /
+    defaults:
+        _controller: FrameworkBundle:Redirect:urlRedirect
+        path: /fr/
+        permanent: true

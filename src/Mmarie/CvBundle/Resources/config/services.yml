@@ -1,0 +1,4 @@
+services:
+#    mmarie_cv.example:
+#        class: Mmarie\CvBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

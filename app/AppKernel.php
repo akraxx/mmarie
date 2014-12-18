@@ -18,6 +18,12 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new AppBundle\AppBundle(),
             new Mmarie\ContactBundle\MmarieContactBundle(),
+            new Mmarie\TranslationBundle\MmarieTranslationBundle(),
+            new Mmarie\HomeBundle\MmarieHomeBundle(),
+            new Mmarie\SkillsBundle\MmarieSkillsBundle(),
+            new Mmarie\AboutMeBundle\MmarieAboutMeBundle(),
+            new Mmarie\PortfolioBundle\MmariePortfolioBundle(),
+            new Mmarie\CvBundle\MmarieCvBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
