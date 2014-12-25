@@ -1,0 +1,38 @@
+who.am.i: Qui suis-je?
+who.am.i.sub: Informatique, ma passion.
+
+developper.java: Développeur Java / JEE
+last.year: 5ème Dernière année d'étude en alternance à
+double.diploma: Double diplôme : <b>ISEN, Institut supérieur de l'électronique et du numérique</b> et <b>FGES, Faculté de Gestion, Economie et sciences.
+graduated: Titulaire du <b>Bachelor of Technology</b> et du <b>First Cambridge Certificat</b>
+description: L'informatique a toujours été une passion avant d'en devenir le sujet de mes études et de mon avenir professionnel. Etant passioné j'aime me tenir au courant de toutes les nouvelles technologies qui gravitent autour de mes domaines favoris.
+contact: Me contacter
+
+experience: Mon expérience.
+experience.sub: L'alternance, une expérience unique.
+
+timeline.since.september.2013: Depuis Septembre 2013
+work.study.contract: Contrat de professionnalisation
+
+worldline.line1: Ma mission principale est de développer des applications WEBs pour Worldline, celle ci sont principalement axées autour de la surveillance de services ou d'équipements. Mais aussi de gestion de tickets (incidents, demandes...) transitants entre les différentes entités de Worldline mais aussi avec les clients.
+worldline.line2: J'ai pu utiliser de nombreuses nouvelles technologies comme l'AngularJS, les services rest en me basant sur Jersey (JEE), le mapping avec les bases de données (Hibernate, Jdbi) etc...
+
+double.diploma.title: Double diplôme
+double.diploma.line1: Pour effectuer mon contrat de professionnalisation j'ai rejoint la Faculté de Gestion, Economie & Sciences (FGES) qui gère le rythme de l'alternance. La première année de cette Faculté fût très axé technique, nous avons pu découvrir ou approfondir des nombreux langages et des techniques de gestion de projet.
+double.diploma.line2: La deuxième année est, quant à elle, orientée autour du management et de la gestion, aussi bien de projets que humaine. Nous avons pu recevoir des cours de Co-Design ou de Leadership par exemple.
+
+cir.title: Cycle Informatique et réseaux
+cir.line1: Un nouveau cycle a vu le jour à l'ISEN en 2008 : le Cycle Informatique et Réseaux (CIR), celui-ci vise les nouveaux bacheliers passionés en informatique qui cherchent une école d'ingénieur tout en ayant la possiblité de commencer l'informatique dès la première année.
+cir.line2: En effet grâce à ce cycle nous avons entre 10 et 12h d'informatique par semaine dès la première année. Moins de théorie plus de pratiques.
+cir.line3: Les cours dispensés couvrent beaucoup de domaines : le développement (+ de 10 langages), réseau, système (UNIX, Windows), informatique embarquée (Arduino)... Le CIR permet d'obtenir le diplôme "Bachelor Of Technology" au bout de la troisième année.
+
+bot.title: Bachelor Of Technology
+bot.line: Obtention du diplôme au bout des 3 premières années de Cycle Informatique et Réseaux à l'ISEN.
+
+first.title: First Cambridge Certificat
+first.line: Le Cambridge English First, également appelé First Certificate in English (FCE), est un diplôme de niveau intermédiaire supérieur. Il correspond au niveau B2 du CECRL et indique que vous pouvez utiliser un anglais écrit et parlé de tous les jours dans le travail ou pour vos études.
+
+internship.title: Stage à l'étranger (Slovaquie)
+internship.line: Pendant ce stage de 2 mois, j'ai pu pour la première fois découvrir le monde de l'entreprise à Defta. Ma mission était d'optimiser les tâches quotidiennes effectuées par les employés, que ce soit sur excel ou sur l'intranet. J'ai pu identifier quelques points à améliorer qui ont conduit au développement de scripts.
+
+

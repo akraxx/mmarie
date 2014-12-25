@@ -1,0 +1,19 @@
+programming:
+  title: Web programming
+  sub: My biggest computing experience.
+  text: I am designing websites since 2007. I use PHP5, MySQL, JavaScript and more recently HTML5, Symfony 2. I am familiar with most web technologies used today.
+
+system:
+  title: The systems administration
+  sub: The area that attracts me the most in IT
+  text: Install a Linux / Windows server, the protection against Internet threats or hardware failure, the monitor and the documentation : I can implement systems that meet the needs of security and robustness.
+
+network:
+  title: Network administration
+  sub: Communicate securely
+  text: Install cabling, set VLANs through managing firewalls, load distribution ADSL and Private VPN : I know today IP and I can make the necessary technologies in enterprise networks.
+
+electronics:
+  title: Electronics
+  sub: A new passion
+  text: By choosing an electronic dominant for my 4 th year postbac school, I wanted to diversify myself. Electronics, basic science that gave birth to the computer is increasingly ignored. I wish, however, to master this field in order to be able to develop domotics for example.

@@ -1,1 +1,11 @@
-mobile: Téléphone portable
+title: Contactez moi !
+bymail: Par email
+on: sur
+oninternet: Sur internet
+details: Mes coordonnées
+my:
+  name: Mon nom
+  mail: Mon adresse de messagerie
+  subject: Mon sujet de conversation
+  message: Mon message
+send: Envoyer le message

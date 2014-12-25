@@ -1,2 +1,156 @@
 {% extends "::base.html.twig" %}
 
+{% block body %}
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+            <h3 class="page-header" id="who">{{ 'who.am.i'|trans }} <span class="text-muted"
+                                                                          style="font-size: 16px;">{{ 'who.am.i.sub'|trans }}</span>
+            </h3>
+
+            <div class="row">
+                <div class="col-md-12" style="background-color: #F5F5F5;">
+                    <div class="jumbotron" style="padding: 10px;">
+                        <h1 style="color: #3bafda;"><b>{{ 'developper.java'|trans }}</b></h1>
+
+                        <h2>{{ 'last.year'|trans }} <b>Worldline</b></h2>
+
+                        <p>{{ 'double.diploma'|trans|raw }}</p>
+
+                        <p>{{ 'graduated'|trans|raw }}.</p>
+
+                        <p>{{ 'description'|trans|raw }}.</p>
+
+                        <p><a class="btn btn-primary btn-lg"
+                              href="{{ path('mmarie_contact_homepage', {'_locale': app.request.locale }) }}"
+                              role="button">{{ 'contact'|trans|raw }}</a></p>
+                    </div>
+
+                </div>
+            </div>
+            <h3 class="page-header" id="experience">{{ 'experience'|trans|raw }} <span class="text-muted"
+                                                                                       style="font-size: 16px;">{{ 'experience.sub'|trans|raw }}</span>
+            </h3>
+
+            <div class="col-md-12" style="background-color: #F5F5F5;">
+                <div class="timeline">
+                    <dl>
+                        <dt>{{ 'timeline.since.september.2013'|trans|raw }}</dt>
+                        <dd class="pos-right clearfix">
+                            <div class="circ"></div>
+                            <div class="time">Worldline</div>
+                            <div class="events">
+                                <div class="pull-left"><img class="events-object img-rounded img-responsive"
+                                                            src="{{ asset('images/worldline.gif') }}" width="50"
+                                                            height="50"></div>
+                                <div class="events-body"><h4
+                                            class="events-heading">{{ 'work.study.contract'|trans|raw }}</h4>
+
+                                    <p>
+                                        {{ 'worldline.line1'|trans|raw }} <br/>
+                                        {{ 'worldline.line2'|trans|raw }}
+                                    </p>
+                                </div>
+                                <span class="label label-primary">Java</span>
+                                <span class="label label-primary">JEE</span>
+                                <span class="label label-primary">AngularJS</span>
+                                <span class="label label-primary">REST</span>
+
+                            </div>
+                        </dd>
+                        <dd class="pos-left clearfix">
+                            <div class="circ"></div>
+                            <div class="time">FGES</div>
+                            <div class="events">
+                                <div class="pull-left"><img class="events-object img-rounded img-responsive"
+                                                            src="{{ asset('images/fges.jpg') }}" width="50" height="50">
+                                </div>
+                                <div class="events-body"><h4
+                                            class="events-heading">{{ 'double.diploma.title'|trans|raw }}</h4>
+
+                                    <p>
+                                        {{ 'double.diploma.line1'|trans|raw }} <br/>
+                                        {{ 'double.diploma.line2'|trans|raw }}
+                                    </p>
+                                </div>
+                                <span class="label label-primary">JEE</span>
+                                <span class="label label-primary">C#</span>
+                                <span class="label label-primary">Symfony2</span>
+                                <span class="label label-primary">Management</span>
+                                <span class="label label-primary">Communication</span>
+
+                            </div>
+                        </dd>
+                        <dt>2009 - 2013</dt>
+                        <dd class="pos-right clearfix">
+                            <div class="circ"></div>
+                            <div class="time">2009 - 2013</div>
+                            <div class="events">
+                                <div class="pull-left"><img class="events-object img-rounded img-responsive"
+                                                            src="{{ asset('images/isen.jpg') }}" width="50" height="50">
+                                </div>
+                                <div class="events-body"><h4 class="events-heading">{{ 'cir.title'|trans|raw }}</h4>
+
+                                    <p>
+                                        {{ 'cir.line1'|trans|raw }} <br/>
+                                        {{ 'cir.line2'|trans|raw }} <br/>
+                                        {{ 'cir.line3'|trans|raw }}
+                                    </p>
+                                </div>
+                                <span class="label label-primary">C</span>
+                                <span class="label label-primary">C++</span>
+                                <span class="label label-primary">Web (HTML, CSS, Js, PHP)</span>
+                                <span class="label label-primary">Windows Server</span>
+                                <span class="label label-primary">UNIX</span>
+                                <span class="label label-primary">Versioning</span>
+
+                            </div>
+                        </dd>
+                        <dd class="pos-left clearfix">
+                            <div class="circ"></div>
+                            <div class="time">2013</div>
+                            <div class="events">
+                                <div class="pull-left"><img class="events-object img-rounded img-responsive"
+                                                            src="{{ asset('images/graduation.png') }}" width="50"
+                                                            height="50"></div>
+                                <div class="events-body"><h4 class="events-heading">{{ 'bot.title'|trans|raw }}</h4>
+
+                                    <p>{{ 'bot.line'|trans|raw }}</p></div>
+                            </div>
+                        </dd>
+                        <dd class="pos-left clearfix">
+                            <div class="circ"></div>
+                            <div class="time">2012</div>
+                            <div class="events">
+                                <div class="pull-left"><img class="events-object img-rounded img-responsive"
+                                                            src="{{ asset('images/cambridge.jpg') }}" width="50"
+                                                            height="50"></div>
+                                <div class="events-body"><h4 class="events-heading">{{ 'first.title'|trans|raw }}</h4>
+
+                                    <p>{{ 'first.line'|trans|raw }}</p></div>
+                            </div>
+                        </dd>
+                        <dd class="pos-right clearfix">
+                            <div class="circ"></div>
+                            <div class="time">Ete 2012</div>
+                            <div class="events">
+                                <div class="pull-left"><img class="events-object img-rounded img-responsive"
+                                                            src="{{ asset('images/internship.png') }}" width="50"
+                                                            height="50"></div>
+                                <div class="events-body"><h4 class="events-heading">{{ 'internship.title'|trans|raw }}</h4>
+
+                                    <p>{{ 'internship.line'|trans|raw }}</p>
+                                </div>
+                                <span class="label label-primary">Visual Basic</span>
+                                <span class="label label-primary">PHP</span>
+                                <span class="label label-primary">Optimisation</span>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}
+

@@ -1,0 +1,19 @@
+programming:
+  title: La programmation web
+  sub: Ma plus grosse expérience informatique.
+  text: Je conçois des sites web depuis 2007. J'utilise PHP5, MySQL, JavaScript et plus récemment HTML5, Symfony 2. Je maîtrise les technologies web les plus employées aujourd'hui.
+
+system:
+  title: L'administration systèmes
+  sub: Le domaine qui m'attire le plus en informatique
+  text: Installer un serveur Linux/Windows, le protéger contre les menaces d'internet ou des pannes matérielles, le monitorer et le documenter : je peux mettre en place des systèmes qui répondent à des besoins de sécurité et de robustesse.
+
+network:
+  title: L'administration réseaux
+  sub: Communiquer de manière sécurisée
+  text: Installer un câblage informatique, paramétrer des réseaux VLAN en passant par la gestion de pare-feux, de répartition de charge ADSL et de VPN : je connais aujourd'hui les réseaux IP et je peux déployer les technologies nécessaires en entreprise.
+
+electronics:
+  title: De l'électronique
+  sub: Une nouvelle passion
+  text: En choisissant une dominante électronique pour ma 4ème année d'école postbac, j'ai souhaité me diversifier. L'électronique, science de base qui a donné naissance à l'informatique, est de plus en plus laissée de côté. Je souhaite, au contraire, maitriser ce domaine pour pourvoir développer de la domotique par exemple.

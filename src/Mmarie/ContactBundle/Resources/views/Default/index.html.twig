@@ -2,5 +2,42 @@
 
 {% block title %}{{ parent() }} - Contact{% endblock %}
 {% block body %}
-    {{ 'mobile'|trans }}
+        <div id="content">
+
+            <h2>{{ 'title'|trans }}</h2>
+            <p><strong>{{ 'bymail'|trans }} :</strong> {{ 'on'|trans }} <i><a href="mailto:contact@mmarie.fr">contact (at) mmarie (dot) fr</a></i></p>
+            <h3>{{ 'oninternet'|trans }}</h3>
+            <form method="post" class="form-horizontal" role="form">
+                <fieldset>
+                    <legend>{{ 'details'|trans }}</legend>
+
+                    <div class="form-group">
+                        <label for="form_Monnom" class="col-lg-2 control-label">{{ 'my.name'|trans }}</label>
+                        <div class="col-lg-10">
+                            <input type="text" name="nom" id="form_Monnom" required="required" class=" form-control" placeholder="{{ 'my.name'|trans }}" data-cip-id="form_Monnom">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="form_Monadressedemessagerie" class="col-lg-2 control-label">{{ 'my.mail'|trans }}</label>
+                        <div class="col-lg-10">
+                            <input type="email" name="mail" id="form_Monadressedemessagerie" required="required" class=" form-control" placeholder="{{ 'my.mail'|trans }}" data-cip-id="form_Monadressedemessagerie">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="form_Monsujetdeconversation" class="col-lg-2 control-label">{{ 'my.subject'|trans }}</label>
+                        <div class="col-lg-10">
+                            <input type="text" name="sujet" id="form_Monsujetdeconversation" required="required" class=" form-control" placeholder="{{ 'my.subject'|trans }}" data-cip-id="form_Monsujetdeconversation">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Mon message</legend>
+                    <textarea name="message" id="form_" style="width:100%; height:200px;" required="required" class="form-control" placeholder="{{ 'my.message'|trans }}" rows="4" cols="150"></textarea>    </fieldset>
+                <p></p><p style="text-align:center;"><input type="submit" value="{{ 'send'|trans }}" class="btn btn-primary"></p><p></p>
+
+            </form>
+        </div>
 {% endblock %}

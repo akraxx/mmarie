@@ -1,1 +1,11 @@
-mobile: Mobile phone
+title: Contact me !
+bymail: By mail
+on: on
+oninternet: On the net
+details: My details
+my:
+  name: My name
+  mail: My mail
+  subject: My subject
+  message: My message
+send: Send the message

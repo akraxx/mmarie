@@ -16,8 +16,14 @@
             <div class="header">
 
                 <ul class="nav nav-pills pull-right">
-                    <li {% if app.request.attributes.get('_route') == 'mmarie_home_homepage' %}class="active"{% endif %}>
-                        <a href="{{ path('mmarie_home_homepage', {'_locale': app.request.locale }) }}">{{ 'home'|trans }}</a>
+                    <li role="presentation" class="dropdown {% if app.request.attributes.get('_route') == 'mmarie_home_homepage' %}active{% endif %}" >
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                            {{ 'home'|trans }} <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="{{ path('mmarie_home_homepage', {'_locale': app.request.locale }) }}#who">{{ 'who.am.i'|trans }}</a></li>
+                            <li><a href="{{ path('mmarie_home_homepage', {'_locale': app.request.locale }) }}#experience">{{ 'experience'|trans }}</a></li>
+                        </ul>
                     </li>
                     <li {% if app.request.attributes.get('_route') == 'mmarie_skills_homepage' %}class="active"{% endif %}>
                         <a href="{{ path('mmarie_skills_homepage', {'_locale': app.request.locale }) }}">{{ 'skills'|trans }}</a>
@@ -27,9 +33,6 @@
                     </li>
                     <li {% if app.request.attributes.get('_route') == 'mmarie_portfolio_homepage' %}class="active"{% endif %}>
                         <a href="{{ path('mmarie_portfolio_homepage', {'_locale': app.request.locale }) }}">{{ 'portfolio'|trans }}</a>
-                    </li>
-                    <li {% if app.request.attributes.get('_route') == 'mmarie_cv_homepage' %}class="active"{% endif %}>
-                        <a href="{{ path('mmarie_cv_homepage', {'_locale': app.request.locale }) }}">{{ 'cv'|trans }}</a>
                     </li>
                     <li {% if app.request.attributes.get('_route') == 'mmarie_contact_homepage' %}class="active"{% endif %}>
                         <a href="{{ path('mmarie_contact_homepage', {'_locale': app.request.locale }) }}">{{ 'contact'|trans }}</a>

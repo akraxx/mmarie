@@ -1,0 +1,36 @@
+who.am.i: Who am i?
+who.am.i.sub: IT, my passion.
+
+developper.java: Java / JEE developper
+last.year: 5th and last year of studies, work-study contract at
+double.diploma: Double degree : <b>ISEN, Institut supérieur de l'électronique et du numérique</b> and <b>FGES, Faculté de Gestion, Economie et sciences.
+graduated: Graduated from <b>Bachelor of Technology</b> and <b>First Cambridge Certificat</b>
+description: IT has always been a passion before I choosed to study it and making my future Job. As far as i am very interested, i like to be aware of any new technologies which is related to my favorites domains.
+contact: Contact me
+
+experience: My experience.
+experience.sub: Work-study, a unique experience.
+
+timeline.since.september.2013: Since September 2013
+work.study.contract: Work-study contract
+
+worldline.line1: My main objective is to developp some Web Applications for Worldline, these one are mainly used to monitor services or equipments. Our team was responsible of an app to manage tickets (incident, requests) through the differents entities of Worldline but also with it's own customers.
+worldline.line2: I used many new technologies, such as AngularJS, REST services based on Jersey (JEE), mapping with database (Hibernate, Jdbi)  etc...
+
+double.diploma.title: Double degree
+double.diploma.line1: To do my work-study contract I joined the Faculté de Gestion, Economie & Sciences (FGES) which manage the rythme company/school. The first year is almost only technical, we discovered many languages and some management tools.
+double.diploma.line2: The second year was focused on the management, as well projects as human. We also received Co-Design and Leadership courses.
+
+cir.title: IT and networks degree.
+cir.line1: A new degree has been created in 2008 at ISEN : IT and networks degree (CIR), it has been created for holders of high school diploma who likes IT and who search for an engineering school, but who wants to start IT courses at the beginning.
+cir.line2: Thanks to this degree, we have betwwen 10 and 12 hours of IT each weeks from the first year. Less theroy, more practice.
+cir.line3: Dispensed courses cover many domains : development (more than 10 languages), network, systems (UNIX, Windows), on board computers (Arduino)... CIR allows us to obtain the degree "Bachelor Of Technology" at the end of the third year.
+
+bot.title: Bachelor Of Technology
+bot.line: Degree obtained at the end of the third year of the IT and networks degree.
+
+first.title: First Cambridge Certificat
+first.line: Then Cambridge English First, also named First Certificate in English (FCE), is a degree of upper intermediate level. It corresponds to the level B2 of CECRL which indicates that you can use written and spoken English of every days, at work or studies.
+
+internship.title: Internship abroad (Slovakia)
+internship.line: During the 2 months internship, i discovered the business world for the first time in Defta. My mission was to optimized everydays tasks done by the employees, theses can be done on Excel or on the Intranet. I could identify some points to improve which have led to the development of some scripts.
