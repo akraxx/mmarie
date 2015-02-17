@@ -1,3 +1,11 @@
 mmarie_contact_homepage:
     path:     /
     defaults: { _controller: MmarieContactBundle:Default:index }
+    requirements:
+        _method:  GET
+
+mmarie_contact_homepage_post:
+    path:     /
+    defaults: { _controller: MmarieContactBundle:Default:message }
+    requirements:
+        _method:  POST

@@ -28,25 +28,11 @@
                     <li {% if app.request.attributes.get('_route') == 'mmarie_skills_homepage' %}class="active"{% endif %}>
                         <a href="{{ path('mmarie_skills_homepage', {'_locale': app.request.locale }) }}">{{ 'skills'|trans }}</a>
                     </li>
-                    <li {% if app.request.attributes.get('_route') == 'mmarie_about_me_homepage' %}class="active"{% endif %}>
-                        <a href="{{ path('mmarie_about_me_homepage', {'_locale': app.request.locale }) }}">{{ 'about.me'|trans }}</a>
-                    </li>
                     <li {% if app.request.attributes.get('_route') == 'mmarie_portfolio_homepage' %}class="active"{% endif %}>
                         <a href="{{ path('mmarie_portfolio_homepage', {'_locale': app.request.locale }) }}">{{ 'portfolio'|trans }}</a>
                     </li>
                     <li {% if app.request.attributes.get('_route') == 'mmarie_contact_homepage' %}class="active"{% endif %}>
                         <a href="{{ path('mmarie_contact_homepage', {'_locale': app.request.locale }) }}">{{ 'contact'|trans }}</a>
-                    </li>
-
-                    <li style="margin-left: 50px;" {% if app.request.locale == 'fr' %}class="active"{% endif %}>
-                        <a href="{{ path('mmarie_translation_homepage', {'_locale': 'fr', 'route': app.request.attributes.get('_route') }) }} ">
-                            <img class="img-responsive" src="{{ asset('images/icons/fr.png') }}">
-                        </a>
-                    </li>
-                    <li {% if app.request.locale == 'en' %}class="active"{% endif %}>
-                        <a href="{{ path('mmarie_translation_homepage', {'_locale': 'en', 'route': app.request.attributes.get('_route') }) }}">
-                            <img class="img-responsive" src="{{ asset('images/icons/uk.png') }}">
-                        </a>
                     </li>
                 </ul>
                 <h3 class="text-muted">Maximilien Marie</h3>

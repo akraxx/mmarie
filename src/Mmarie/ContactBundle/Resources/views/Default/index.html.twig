@@ -2,40 +2,57 @@
 
 {% block title %}{{ parent() }} - Contact{% endblock %}
 {% block body %}
-        <div id="content">
+        <div id="content" style="padding: 10px;">
 
             <h2>{{ 'title'|trans }}</h2>
             <p><strong>{{ 'bymail'|trans }} :</strong> {{ 'on'|trans }} <i><a href="mailto:contact@mmarie.fr">contact (at) mmarie (dot) fr</a></i></p>
             <h3>{{ 'oninternet'|trans }}</h3>
-            <form method="post" class="form-horizontal" role="form">
+            <div class="row">
+                <div class="col-lg-12">
+                    {% for type, messages in app.session.flashBag.all %}
+                        {% for message in messages %}
+                            <div class="alert alert-info alert-dismissable">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                {{ message }}
+                            </div>
+                        {% endfor %}
+                    {% endfor %}
+                </div>
+            </div>
+            <form method="post" class="form-horizontal" role="form" action="{{ path('mmarie_contact_homepage_post', {'_locale': app.request.locale }) }}">
+                <div class="text-danger">{{ form_errors(form) }}</div>
                 <fieldset>
                     <legend>{{ 'details'|trans }}</legend>
 
                     <div class="form-group">
                         <label for="form_Monnom" class="col-lg-2 control-label">{{ 'my.name'|trans }}</label>
                         <div class="col-lg-10">
-                            <input type="text" name="nom" id="form_Monnom" required="required" class=" form-control" placeholder="{{ 'my.name'|trans }}" data-cip-id="form_Monnom">
+                            <input type="text" name="{{ form.name.vars.full_name }}"
+                                   id="{{ form.name.vars.id }}" required="required" class=" form-control" placeholder="{{ 'my.name'|trans }}" data-cip-id="form_Monnom">
+                            <div class="text-danger">{{ form_errors(form.name) }}</div>
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label for="form_Monadressedemessagerie" class="col-lg-2 control-label">{{ 'my.mail'|trans }}</label>
                         <div class="col-lg-10">
-                            <input type="email" name="mail" id="form_Monadressedemessagerie" required="required" class=" form-control" placeholder="{{ 'my.mail'|trans }}" data-cip-id="form_Monadressedemessagerie">
+                            <input type="email" name="{{ form.mail.vars.full_name }}"
+                                   id="{{ form.mail.vars.id }}" required="required" class=" form-control" placeholder="{{ 'my.mail'|trans }}" data-cip-id="form_Monadressedemessagerie">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label for="form_Monsujetdeconversation" class="col-lg-2 control-label">{{ 'my.subject'|trans }}</label>
                         <div class="col-lg-10">
-                            <input type="text" name="sujet" id="form_Monsujetdeconversation" required="required" class=" form-control" placeholder="{{ 'my.subject'|trans }}" data-cip-id="form_Monsujetdeconversation">
+                            <input type="text" name="{{ form.subject.vars.full_name }}" id="{{ form.subject.vars.id }}"
+                                   required="required" class=" form-control" placeholder="{{ 'my.subject'|trans }}" data-cip-id="form_Monsujetdeconversation">
                         </div>
                     </div>
                 </fieldset>
-
+                <input type="hidden" name="{{ form._token.vars.full_name }}" class="form-control" id="{{ form._token.vars.id }}" value="{{ form._token.vars.value }}">
                 <fieldset>
                     <legend>Mon message</legend>
-                    <textarea name="message" id="form_" style="width:100%; height:200px;" required="required" class="form-control" placeholder="{{ 'my.message'|trans }}" rows="4" cols="150"></textarea>    </fieldset>
+                    <textarea name="{{ form.message.vars.full_name }}" id="{{ form.message.vars.id }}" style="width:100%; height:200px;" required="required" class="form-control" placeholder="{{ 'my.message'|trans }}" rows="4" cols="150"></textarea>    </fieldset>
                 <p></p><p style="text-align:center;"><input type="submit" value="{{ 'send'|trans }}" class="btn btn-primary"></p><p></p>
 
             </form>
